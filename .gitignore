@@ -1,0 +1,7 @@
+/results/
+*.png
+log.html
+output.xml
+report.html
+/web_locators/__pycache__/
+*.pyc
