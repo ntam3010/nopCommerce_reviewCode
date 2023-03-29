@@ -1,6 +1,7 @@
 *** Settings ***
-Library                SeleniumLibrary
-Resource               ../resources/config.resource
+Library    SeleniumLibrary
+Variables    ../env_conf.py
+Variables    ../constant/url_constants.py
 
 *** Keywords ***
 Open The Home Page
@@ -9,11 +10,3 @@ Open The Home Page
 
 Close Browser Window
     Close Browser
-
-Open The Login Page
-    Open Browser    ${base_url}${login_page}    ${selected_browser}
-    Maximize Browser Window
-
-Open The Register Page
-    Open Browser    ${base_url}${register_page}    ${selected_browser}
-    Maximize Browser Window

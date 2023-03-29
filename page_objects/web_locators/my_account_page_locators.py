@@ -1,0 +1,1 @@
+change_password_link="xpath://a[contains(text(),'Change password')]"
