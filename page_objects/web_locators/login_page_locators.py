@@ -1,0 +1,5 @@
+page_title="xpath://div[@class='page-title']/h1"
+login_email_txt="css:input#Email"
+login_password_txt="css:input#Password"
+login_btn="xpath://button[contains(text(),'Log in')]"
+login_error_msg="xpath://div[@class='message-error validation-summary-errors']/ul/li"

@@ -1,7 +1,7 @@
 ${testcase_id};${old_pwd};${new_pwd};${confirm_pwd};${summary_error_message};${old_pwd_error_message};${new_pwd_error_message};${confirm_pwd_error_message};
-ChangePWD_04;Test@123;A123;A123;;;Password must meet the following rules:\\nmust have at least 6 characters;;
+ChangePWD_04;${default_user_data.password};A123;A123;;;must meet the following rules:\\nmust have at least 6 characters;;
 ChangePWD_10;;;;;Old password is required.;Password is required.;Password is required.;
 ChangePWD_11;;Test@1234;Test@1234;;Old password is required.;;;
-ChangePWD_12;Test@123;;Test@1234;;;Password is required.;;
-ChangePWD_13;Test@123;Test@1234;;;;;Password is required.;
+ChangePWD_12;${default_user_data.password};;Test@1234;;;Password is required.;;
+ChangePWD_13;${default_user_data.password};Test@1234;;;;;Password is required.;
 ChangePWD_14;incorrectPassword;Test@1234;Test@1234;Old password doesn't match;;;
